@@ -58,6 +58,7 @@ namespace Agenda
 				using (var stream =
 					new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
 				{
+
 					string credPath = Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
 					credPath = Path.Combine(credPath, @"Local\Agenda\data\credentials");
 
